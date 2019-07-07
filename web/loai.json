@@ -1,0 +1,14 @@
+[
+  {
+    "maloai": 1,
+    "tenloai": "movie"
+  },
+  {
+    "maloai": 2,
+    "tenloai": "book"
+  },
+  {
+    "maloai": 3,
+    "tenloai": "music"
+  }
+]
