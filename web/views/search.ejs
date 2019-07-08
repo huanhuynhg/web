@@ -1,0 +1,103 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>online shop</title>
+<script language="javascript" type="text/javascript">
+ function Timkiem()
+ {
+	 var tk="http://localhost:8888/?search="+ document.getElementById("search").value 
+	window.open(tk);
+ }
+</script>
+</head>
+
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr bgcolor="#F4FBEB">
+    <td width="21%" valign="top"><img src="/img/icons-images/B4U-Movies.png" width="205" height="102" /></td>
+    <td width="58%" valign="top"><table width="100" border="0" cellpadding="0" cellspacing="2">
+      <img src="./img/shopping-header1.jpg"/>
+    </table></td>
+    <td width="27%" valign="top">
+  <table width="100%" border="0" cellpadding="0" cellspacing="2">
+      <form id="form1" name="form1" method="post" action="trang_1.php">
+    <tr>
+        <td colspan="2"><div align="center" class="style5">Đăng nhập</div></td>
+        </tr>
+      <tr>
+        <td width="46%"><p class="style10">Tên đăng nhập: </p></td>
+        <td width="54%"><span class="style10">
+          <label>
+            <input name="ten_dn" type="text" id="ten_dn" size="15" />
+            </label>
+        </span> </td>
+      </tr>
+      <tr>
+        <td><p class="style10">Mật khẩu: </p></td>
+        <td><span class="style10">
+          <label>
+            <input name="mat_khau" type="password" id="mat_khau" size="15" />
+            </label>
+        </span></td>
+      </tr>
+      
+        <td colspan="2"><div align="center">
+          <label>
+          <input type="submit" name="Submit" value="Đăng nhập" />
+          </label>
+        </div></td>
+        </tr>
+  </form>
+    </table></td>
+  </tr>
+  <tr>
+    <td valign="center" bgcolor="#D3F4CE"><span class="style3"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></span></td>
+    <td colspan="3" valign="top" background="hinh_anh/nen.jpg"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr align="center" class="style10" bgcolor="#CCFFCC">
+        <td width="25%" height="23" bgcolor="#CCFFCC"><strong><a href="index.ejs"><strong>Trang chủ</strong></a></td>
+        <td width="25%"><strong><a href="trang_2.php"><strong>Tìm kiếm</strong></a></td>
+        
+        <td width="22%"><strong><a href="trang_dang_ky.php">Đăng ký mới</a></strong></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr bgcolor="#F4FBEB">
+    <td valign="top" bgcolor="#F4FBEB"><table width="100%" border="0" cellpadding="0" cellspacing="0" background="hinh_anh/nen.jpg">
+      <tr>
+        <td bgcolor="#C7EAB0"><table width="100%" border="0" bgcolor="#F4FBEB">
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+          </table>      </td>
+      </tr>
+      <tr>
+        <td valign="bottom" bgcolor="#F4FBEB"><img src="hinh_anh/BannerSideCreative.jpg" width="200" height="200" /></td>
+      </tr>
+    </table>    </td>
+    <td colspan="3" valign="top"> <form name="form1" method="post" action="trang_2.php">
+      <table width="100%"  border="0" cellpadding="0" cellspacing="0" bordercolor="#BBE09D">
+        <tr>&nbsp;&nbsp;</tr>
+        <tr>&nbsp;&nbsp;</tr>
+        <tr bgcolor="#F4F8E9">
+          <td colspan="2" align="center" class="style1"><span class="style4"> TÌM KIẾM SẢN PHẨM </span></td>
+          </tr>
+        <tr>
+          <td width="36%" bordercolor="#FFFFFF" bgcolor="#E8F6DC"><blockquote class="style10">
+            <p>Tên sản phẩm: </p>
+          </blockquote></td>
+          <td width="64%" bordercolor="#FFFFFF" bgcolor="#E8F6DC"><input name="tensp" type="text" id="search" size="30"></td>
+        </tr>
+        <tr>
+          <td height="40" colspan="2" align="center" bgcolor="#E0F1CD">
+             <input name="Submit" type="button" value="Tìm kiếm" onClick="Timkiem();">        </td>
+        </tr>
+      </table>
+    </form></td>
+  </tr>
+  
+</table>
+</body>
+</html>

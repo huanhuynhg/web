@@ -37,7 +37,8 @@
     <Content Include="package.json" />
     <Content Include="products.json" />
     <Content Include="README.md" />
-    <Content Include="views\index.ejs">
+    <Content Include="views\index.ejs" />
+    <Content Include="views\index1.ejs">
       <SubType>Code</SubType>
     </Content>
   </ItemGroup>

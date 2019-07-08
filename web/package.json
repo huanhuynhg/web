@@ -7,10 +7,11 @@
     "name": ""
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "ejs": "^2.6.2",
     "ejs-locals": "^1.0.2",
     "express": "^4.17.1",
-    "mysql": "^2.17.1",
-    "utf8": "^3.0.0"
+    "mysql2": "^1.6.5",
+    "url-parse": "^1.4.7"
   }
 }
