@@ -36,13 +36,36 @@
     <Content Include="loai.json" />
     <Content Include="package.json" />
     <Content Include="products.json" />
+    <Content Include="public\img\beethoven.jpg" />
+    <Content Include="public\img\bobmarley.jpg" />
+    <Content Include="public\img\Disney-Films_SnowWhite.jpg" />
+    <Content Include="public\img\goodfellas.jpg" />
+    <Content Include="public\img\harrypotter.jpg" />
+    <Content Include="public\img\header-onlineshop-1.jpg" />
+    <Content Include="public\img\header2.jpeg" />
+    <Content Include="public\img\header3.jpeg" />
+    <Content Include="public\img\icons-images\B4U-Movies.png" />
+    <Content Include="public\img\icons-images\movies.png" />
+    <Content Include="public\img\icons-images\Music-CD.png" />
+    <Content Include="public\img\icons-images\NodeJS_book_lp.png" />
+    <Content Include="public\img\javascript.jpg" />
+    <Content Include="public\img\online-shopping.png" />
+    <Content Include="public\img\shining.jpg" />
+    <Content Include="public\img\shopping-header.jpg" />
+    <Content Include="public\img\starwars.jpg" />
+    <Content Include="public\img\stevewonder.jpg" />
+    <Content Include="public\img\terminator3.jpg" />
     <Content Include="README.md" />
+    <Content Include="views\dangnhap.ejs" />
     <Content Include="views\index.ejs" />
     <Content Include="views\index1.ejs">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\search.ejs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="public\img\" />
+    <Folder Include="public\img\icons-images\" />
     <Folder Include="views\" />
     <Folder Include="public\" />
   </ItemGroup>

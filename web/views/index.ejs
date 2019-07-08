@@ -1,7 +1,7 @@
 ﻿<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><%- title %></title>
+<title>online shop</title>
 <script src="utf8.js"></script>
 </head>
 
@@ -14,33 +14,43 @@
     </table></td>
     <td width="27%" valign="top">
   <table width="100%" border="0" cellpadding="0" cellspacing="2">
-      <form id="form1" name="form1" method="post" action="trang_1.php">
-    <tr>
-        <td colspan="2"><div align="center" class="style5">Đăng nhập</div></td>
-        </tr>
-      <tr>
-        <td width="46%"><p class="style10">Tên đăng nhập: </p></td>
-        <td width="54%"><span class="style10">
-          <label>
-            <input name="ten_dn" type="text" id="ten_dn" size="15" />
-            </label>
-        </span> </td>
-      </tr>
-      <tr>
-        <td><p class="style10">Mật khẩu: </p></td>
-        <td><span class="style10">
-          <label>
-            <input name="mat_khau" type="password" id="mat_khau" size="15" />
-            </label>
-        </span></td>
-      </tr>
-      
-        <td colspan="2"><div align="center">
-          <label>
-          <input type="submit" name="Submit" value="Đăng nhập" />
-          </label>
-        </div></td>
-        </tr>
+      <form id="form1" name="form1" method="post" action="/dangnhap">
+          <tr>
+              <td width="46%"><p class="style10">Tên đăng nhập: </p></td>
+              <td width="54%">
+                  <span class="style10">
+                      <label>
+                          <input name="ten_dn" type="text" id="ten_dn" size="15" />
+                      </label>
+                  </span>
+              </td>
+          </tr>
+          <tr>
+              <td><p class="style10">Mật khẩu: </p></td>
+              <td>
+                  <span class="style10">
+                      <label>
+                          <input name="mat_khau" type="password" id="mat_khau" size="15" />
+                      </label>
+                  </span>
+              </td>
+          </tr>
+
+
+          <td colspan="2">
+              <div align="center">
+                  <label>
+                      <input type="submit" name="Submit" value="Đăng nhập" />
+                  </label>
+              </div>
+          </td>
+          <tr>
+              <td valign="top"><%-hoten%></td>
+          </tr>
+          <tr>
+              <td valign="top"><div align="left" class="style10"><%-thoat%></div></td>
+          </tr>
+</tr>
   </form>
     </table></td>
   </tr>
@@ -48,10 +58,10 @@
     <td valign="center" bgcolor="#D3F4CE"><span class="style3"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DANH MỤC</strong></span></td>
     <td colspan="3" valign="top" background="hinh_anh/nen.jpg"><table width="100%" border="0" cellpadding="0" cellspacing="0">
       <tr align="center" class="style10" bgcolor="#CCFFCC">
-        <td width="25%" height="23" bgcolor="#CCFFCC"><strong><a href="index.ejs"><strong>Trang chủ</strong></a></td>
+        <td width="25%" height="23" bgcolor="#CCFFCC"><strong><a href="http://localhost:8888"><strong>Trang chủ</strong></a></td>
         <td width="25%"><strong><a href="http://localhost:8888/?timkiem=1"><strong>Tìm kiếm</strong></a></td>
         
-        <td width="22%"><strong><a href="trang_dang_ky.php">Đăng ký mới</a></strong></td>
+        <td width="22%"><strong><a href="/?dangky=1">Đăng ký mới</a></strong></td>
       </tr>
     </table></td>
   </tr>
@@ -69,7 +79,9 @@
           </table>      </td>
       </tr>
       <tr>
-        <td valign="bottom" bgcolor="#F4FBEB"><img src="hinh_anh/BannerSideCreative.jpg" width="200" height="200" /></td>
+        <td valign="bottom" bgcolor="#F4FBEB"><img src="hinh_anh/BannerSideCreative.jpg" width="200" height="200" />
+		<br><span class="style3" >&nbsp;Thông tin giỏ hàng</span>
+          <br><%-hienthigiohang%></td>
       </tr>
     </table>    </td>
     <td colspan="3" valign="top" bgcolor="#FFFFFF">
