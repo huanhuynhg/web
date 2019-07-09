@@ -79,7 +79,7 @@ module.exports.HienThiGioHang = function (giohang) {
 
 };
 
-module.exports.HienThiChiTietSP = async function (id,name) {
+module.exports.HienThiChiTietSP = async function (masp,tensp) {
     var mysql = require('mysql2/promise');
     var pool = mysql.createPool({
         host: 'localhost',
@@ -90,7 +90,7 @@ module.exports.HienThiChiTietSP = async function (id,name) {
         queueLimit: 0
     });
     var dssp;
-    if(id!=0)
+    if(masp!=0)
         dssp = await pool.query("select  * from sanpham where masp=" + masp);
     else
         dssp = await pool.query("select  * from sanpham where tensp like'%" + tensp + "%' or mota like '%" + tensp +"'");

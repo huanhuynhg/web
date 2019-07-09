@@ -27,10 +27,10 @@ XuatDuLieu = async function (req, res) {
                 muasp: q.muasp, tensp: q.tensp,
                 dongia: q.dongia, soluong: 1
             };
-            //??a vào gi? hàng
+            //ra vào gi? hàng
             req.session.giohang[0] = sp;
         }
-        else//?ã có gi? hàng
+        else //?ã có gi? hàng
         {//Ki?m tra hoa ch?n mua ?ã ???c ch?n tr??c ?ó ch?a
             var co = 0;
             for (i = 0; i < req.session.giohang.length; i++) {
@@ -42,7 +42,7 @@ XuatDuLieu = async function (req, res) {
             }
             //N?u ch?a  có trong gi? hàng
             if (co == 0) {
-                //t?o m?i 1 hoa và ??a vào gi? hàng
+                //t?o m?i 1 sp và ??a vào gi? hàng
                 var sp = {
                     mua: q.muasp, tensp: q.tensp,
                     dongia: q.dongia, soluong: 1
@@ -53,8 +53,7 @@ XuatDuLieu = async function (req, res) {
             console.log(req.session.giohang);
 
         }
-    }else 
-    if (q.tensp != undefined) {
+    }else if (q.tensp != undefined) {
         tensp = q.tensp;
         dssp = await csdl.HienThiChiTietSP(0, tensp);
     } else if (q.id != undefined) {
@@ -78,7 +77,7 @@ XuatDuLieu = async function (req, res) {
         var tenkh = "";
         var thoat = "";
         if (req.session.kh == "") {
-            tenkh = "Thông tin dang nhap sai";
+            tenkh = "Thong tin dang nhap sai";
             req.session.kh = undefined;
         }
         else if (req.session.kh != undefined) {
